@@ -10,7 +10,7 @@ export default class Condition1 extends Component {
       <div>
         <div>
         {this.state.on
-        ? <h1>true</h1>
+        ?<h1>true</h1>
         :<h1>false</h1>
         }
       </div>
