@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 export default class Condition1 extends Component {
   state={
     on:true
-  }
+  };
+
   render() {
 
     return (

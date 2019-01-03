@@ -9,7 +9,7 @@ class Condition3 extends Component {
             <div>
                 {
                     this.state.on &&
-                        <h1>on conditions 3</h1>
+                    <h1>on conditions 3</h1>
                 }
             </div>
         );
