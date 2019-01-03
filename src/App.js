@@ -5,6 +5,7 @@ import Condition2 from "./components/Condition2";
 import ConditionButton from "./components/conditionButton";
 import Condition3 from "./components/Condition3";
 import ConditionSpinner from "./components/ConditionSpinner";
+import ConditionsFetch from "./components/ConditionsFetch";
 
 class App extends Component {
     state = {
@@ -20,6 +21,7 @@ class App extends Component {
                 <ConditionButton/>
                 <Condition3/>
                 <ConditionSpinner/>
+                <ConditionsFetch/>
             </div>
         );
     }
