@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 
 class Condition3 extends Component {
     state={
-        on:false
+        on:true
     }
     render() {
         return (
-            <div>
+            <div className="box">
                 {
                     this.state.on &&
-                    <h1>on conditions 3</h1>
+                    <h1>on condition</h1>
                 }
             </div>
         );

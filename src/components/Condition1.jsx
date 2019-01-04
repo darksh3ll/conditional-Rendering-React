@@ -9,7 +9,7 @@ export default class Condition1 extends Component {
 
     return (
       <div>
-        <div>
+        <div className="box">
         {this.state.on
         ?<h1>true</h1>
         :<h1>false</h1>

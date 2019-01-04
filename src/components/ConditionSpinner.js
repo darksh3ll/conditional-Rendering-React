@@ -12,7 +12,7 @@ class ConditionSpinner extends Component {
 
     render() {
         return (
-            <div>
+            <div className="box">
                 <button onClick={this.handleClick}>{this.state.on?"On":"Off"}</button>
                 {
                     this.state.on &&

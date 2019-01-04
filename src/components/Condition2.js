@@ -6,7 +6,7 @@ class Condition2 extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="box">
                 {
                     this.state.login?(
                         <h1>true</h1>
