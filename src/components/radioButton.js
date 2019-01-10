@@ -3,14 +3,25 @@ import {Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap';
 
 class RadioButton extends Component {
     state = {
-        choice:"",
-        on:false
+        choice: "",
+        on: false
+
     }
 
     handleChange = (e) => {
-       this.setState({choice:e.target.value})
-       console.log(e.target.name);
+        this.setState({choice: e.target.value})
+        console.log(e.target.name);
     }
+
+    boucle = () => {
+        let option = []
+        for ( let i = 1; i <= 101; i++ ) {
+            option.push({i})
+        }
+     const select = Object.keys(option).map(key => <option>{key}</option>)
+     return select
+    };
+
     render() {
 
         return (
@@ -19,14 +30,16 @@ class RadioButton extends Component {
                 <FormGroup tag="fieldset">
                     <legend>Radio Buttons</legend>
                     <p>{this.state.choice}</p>
+
                     <FormGroup check>
                         <Label check>
                             <Input
                                 type="radio"
-                                name ="radio"
+                                name="radio"
                                 value="GR"
-                                onChange={this.handleChange} />{' '}
-                                GR
+                                onChange={this.handleChange}
+                            />{' '}
+                            GR
                         </Label>
                     </FormGroup>
 
@@ -36,34 +49,33 @@ class RadioButton extends Component {
                                 type="radio"
                                 name="radio"
                                 value="KG"
-                                onClick={this.handleChange} />{' '}
-                                KG
+                                onClick={this.handleChange}
+                            />{' '}
+                            KG
                         </Label>
                     </FormGroup>
 
-                    <div className="formInput">
                     <FormGroup check>
                         <Label check>
                             <Input
                                 type="radio"
                                 name="radio"
                                 value="Poids"
-                                onClick={this.handleChange} />{' '}
+                                onClick={this.handleChange}/>{' '}
                             POIDS
                         </Label>
                         <FormGroup/>
-                        <Input disabled type="select" name="select" id="exampleSelect">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </Input>
+                        <FormGroup>
+                            <Input  type="select" name="select" id="exampleSelect">
+                                {
+                                     this.boucle()
+                                }
+
+                            </Input>
+                        </FormGroup>
                     </FormGroup>
-                    </div>
                 </FormGroup>
                 <Button>Submit</Button>
-
 
 
             </div>

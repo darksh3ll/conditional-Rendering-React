@@ -9,6 +9,7 @@ import "./Home.css"
 import Testing from "../Testing";
 import ConditionButton1 from "../ConditionButton1";
 import RadioButton from "../radioButton";
+import {Link} from "react-router-dom";
 
 class Home extends Component {
     render() {
@@ -22,7 +23,9 @@ class Home extends Component {
                 <ConditionSpinner/>
                 <Testing/>
                 <ConditionButton1/>
-                <RadioButton/>
+                <Link to={"/radioButton"}>
+                exemple radioButton
+                </Link>
             </div>
         );
     }
