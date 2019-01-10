@@ -26,6 +26,9 @@ class Home extends Component {
                 <Link to={"/radioButton"}>
                 exemple radioButton
                 </Link>
+                <Link to={"/villeFrance"}>
+                Api ville france
+                </Link>
             </div>
         );
     }

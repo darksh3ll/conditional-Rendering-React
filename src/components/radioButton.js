@@ -5,7 +5,6 @@ class RadioButton extends Component {
     state = {
         choice: "",
         on: false
-
     }
 
     handleChange = (e) => {
