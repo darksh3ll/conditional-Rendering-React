@@ -6,6 +6,7 @@ import Condition3 from "../Condition3";
 import ConditionButton from "../conditionButton";
 import ConditionsCompteur from "../ConditionsCompteur";
 import "./Home.css"
+import BtnDisabled from "../BtnDisabled"
 import Testing from "../Testing";
 import ConditionButton1 from "../ConditionButton1";
 import RadioButton from "../radioButton";
@@ -29,6 +30,7 @@ class Home extends Component {
                 <Link to={"/villeFrance"}>
                 Api ville france
                 </Link>
+                <BtnDisabled/>
             </div>
         );
     }
